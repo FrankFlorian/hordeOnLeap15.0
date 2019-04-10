@@ -10,16 +10,26 @@ $conf[cookie][domain] = ""
 
 Go to database tag and fill in the following valus:
 
-$conf['sql']['phptype'] = MySQL/PDO ;
-$conf['sql']['username'] = horde ;
+$conf['sql']['phptype'] = MySQL/PDO
+
+$conf['sql']['username'] = horde
+
 $conf['sql']['password'] = horde 
+
 $conf['sql']['protocol'] = TCP/IP
+
 $conf['sql']['hostspec'] = hordeonleap150_db_1
+
 $conf['sql']['port'] = 3306
+
 $conf['sql']['database'] = horde
+
 $conf['sql']['charset'] = utf-8
+
 $conf['sql']['ssl'] = No
+
 $conf['sql']['splitread'] = Disabled
+
 $conf['sql']['logqueries'] = no checkmark
 
 docker exec -it hordeOnTumbelweed_php_1 /srv/git/horde/base/bin/horde-db-migrate
