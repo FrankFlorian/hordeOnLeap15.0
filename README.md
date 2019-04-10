@@ -11,7 +11,7 @@ $conf[cookie][domain] = ""
 
 Go to database tag and fill in the following valus:
 
-$conf['sql']['phptype'] = MySQL/PDO \n
+$conf['sql']['phptype'] = MySQL/PDO
 $conf['sql']['username'] = horde
 
 $conf['sql']['password'] = horde 
