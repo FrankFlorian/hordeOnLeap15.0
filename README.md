@@ -1,12 +1,12 @@
 Run the following commands as root:
-Make sure docker deamon is running:
+Make sure docker daemon is running:
 ```
 zypper in docker docker-compose
 systemctl enable docker
 systemctl start docker
 ```
 
-Clone the reposiory and start the docker-compose file:
+Clone the repository and start the docker-compose file:
 ```
 git clone https://github.com/FrankFlorian/hordeOnLeap15.0.git
 docker-compose -f docker-compose.yml up
@@ -16,11 +16,11 @@ docker exec -it hordeonleap150_db_1 mysql -p -e "create database horde; grant al
 
 Use the frontend(localhost) for building the new configuration: Go to the gear symbol select Administration->Configuration and then select the configuration for Horde(Horde (horde) 6.0.0-git).
 
-Stay at Gernal tab and go to Session Settings:
+Stay at the "General"-tab and scroll down to Session Settings:
 ```
 $conf[cookie][domain] = ""
 ```
-Go to database tag and fill in the following valus:
+Go to the "Database"-tab and fill in the following valus:
 ```
 $conf['sql']['phptype'] = MySQL/PDO
 $conf['sql']['username'] = horde
