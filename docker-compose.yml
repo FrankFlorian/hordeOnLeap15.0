@@ -10,7 +10,7 @@ services:
         networks:
             - horde
     php:
-        image: registry.opensuse.org/home/frank_florian/branches/opensuse/templates/images/15.0/containers/my_container
+        image: registry.opensuse.org/home/frank_florian/branches/opensuse/templates/images/15.0/containers/my_container:latest
         ports:
             - 80:80
         networks:
