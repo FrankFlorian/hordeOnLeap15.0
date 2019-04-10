@@ -1,0 +1,25 @@
+version: '3.1'
+services:
+    db:
+        image: mariadb
+        restart: always
+        ports:
+            - 3306
+        environment:
+            MYSQL_ROOT_PASSWORD: Horde
+        networks:
+            - horde
+    php:
+        image: registry.opensuse.org/home/frank_florian/branches/opensuse/templates/images/15.0/containers/my_container
+        ports:
+            - 80:80
+        networks:
+            - horde
+        depends_on:
+            - "db"
+        command: /usr/sbin/apachectl -D FOREGROUND
+        tty: true
+
+networks:
+    horde:
+        driver: bridge
