@@ -10,10 +10,10 @@ $conf[cookie][domain] = ""
 
 Go to database tag and fill in the following valus:
 
-$conf['sql']['phptype'] = MySQL/PDO 
-$conf['sql']['username'] = horde 
+$conf['sql']['phptype'] = MySQL/PDO ;
+$conf['sql']['username'] = horde ;
 $conf['sql']['password'] = horde 
-$conf['sql']['p$conf[cookie][domain]$conf[cookie][domain]$conf[cookie][domain]$conf[cookie][domain]rotocol'] = TCP/IP
+$conf['sql']['protocol'] = TCP/IP
 $conf['sql']['hostspec'] = hordeonleap150_db_1
 $conf['sql']['port'] = 3306
 $conf['sql']['database'] = horde
