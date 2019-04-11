@@ -20,7 +20,7 @@ Stay at the "General"-tab and scroll down to Session Settings:
 ```
 $conf[cookie][domain] = ""
 ```
-Go to the "Database"-tab and fill in the following valus:
+Go to the "Database"-tab and fill in the following values:
 ```
 $conf['sql']['phptype'] = MySQL/PDO
 $conf['sql']['username'] = horde
