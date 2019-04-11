@@ -9,7 +9,7 @@ systemctl start docker
 Clone the repository and start the docker-compose file:
 ```
 git clone https://github.com/FrankFlorian/hordeOnLeap15.0.git
-docker-compose -f docker-compose.yml up
+docker-compose -f docker-compose.yml up -d
 docker exec -it hordeonleap150_db_1 mysql -p -e "create database horde; grant all on horde.* to 'horde'@'%' identified by 'horde'";
 ```
 -> Password: horde
