@@ -34,4 +34,9 @@ $conf['sql']['ssl'] = No
 $conf['sql']['splitread'] = Disabled
 $conf['sql']['logqueries'] = no checkmark
 ```
+Click on "Generate Horde Configuration"
+
+Go back to the your terminal and update the database:
+```
 docker exec -it hordeonleap150_php_1 /srv/git/horde/base/bin/horde-db-migrate
+```
